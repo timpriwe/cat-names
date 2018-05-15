@@ -34,10 +34,12 @@ return result;
 
 } 
 
+
+
   render() {
     return (
       <div className="cat-names">
-        <h1>Your catnames <span role="img" aria-label="loving cat">😻</span>:</h1>
+        <h2><span role="img" aria-label="loving cat">😻</span> Let's See Some Cats <span role="img" aria-label="loving cat">😻</span></h2>
         <ul className="list-of-cats">
             {
               Object
