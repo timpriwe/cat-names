@@ -15,7 +15,6 @@ super();
 this.state = {
   cats: sampleCats
   }
-
 }
 
 
@@ -24,7 +23,7 @@ this.state = {
     return (
       <div className="cat-names">
       
-      <h1>Your catnames:</h1>
+      <h1>Your catnames 😻:</h1>
       <ul className="list-of-cats">
             {
               Object
