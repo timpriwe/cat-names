@@ -19,11 +19,6 @@ this.state = {
   }
 }
 
-componentDidMount(){
-if(this.props.match.params.catCount !== undefined)
-console.log(this.props.match.params.catCount);
-}
-
 getRandomCatNames(source, neededNumber){
 
   let result = [];
