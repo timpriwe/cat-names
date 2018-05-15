@@ -30,6 +30,18 @@ return result;
 
 } 
 
+componentDidMount(){
+
+  this.setState(
+
+      /*Here I want to take my state, make it to an array(?) and use my getRandomCatNames on it with 
+      the array as source and this.props.match.params.catCount (which comes from routing) as neededNumber.
+      Now I get back an Array with X (neededNumber) cat names which i want to have in state to get them rendered.
+      */
+  )
+
+}
+
 
 
   render() {
