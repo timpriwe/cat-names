@@ -4,7 +4,7 @@ class Cat extends React.Component {
 
 render(){
 
-    const { details, index } = this.props;
+    const { details } = this.props;
 
     return (
 

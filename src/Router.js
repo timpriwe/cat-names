@@ -7,11 +7,11 @@ import NotFound from './NotFound';
 const Router = () => (
 
     <BrowserRouter>
-    <Switch>
-    <Route exact path="/" component={App} />
-    <Route path="/count/:catCount" component={App} />
-    <Route component={NotFound} />
-    </Switch>
+        <Switch>
+            <Route exact path="/" component={App} />
+            <Route path="/count/:catCount" component={App} />
+            <Route component={NotFound} />
+        </Switch>
     </BrowserRouter>
 )
 
