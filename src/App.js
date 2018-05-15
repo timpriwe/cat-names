@@ -12,33 +12,36 @@ this.getRandomCatNames = this.getRandomCatNames.bind(this);
 
 // initial state
 this.state = {
-  cats: sampleCats
+  cats: sampleCats,
+  catsToDisplay: []
   }
 }
 
 getRandomCatNames(source, neededNumber){
 
-  let result = [];
+  const shuffled = source.slice().sort(() => .5 - Math.random()); // shuffle  
+  const selected = shuffled.slice(0, neededNumber); //get sub-array of first n elements AFTER shuffle
 
+  return selected;
+
+  /*
+  let result = [];
   for (var i = 0; i < neededNumber; i++) {
-    result.push(source[Math.floor(Math.random()*source.length)]);
+  result.push(source[Math.floor(Math.random()*source.length)]);
 }
 return result;
-
+*/
 } 
 
 componentDidMount(){
 
   this.setState(
 
-    // this.getRandomCatNames(cats, this.props.match.params.catCount)
-
-      /*Here I want to take my state, make it to an array(?) and use my getRandomCatNames on it with 
-      the array as source and this.props.match.params.catCount (which comes from routing) as neededNumber.
-      Now I get back an Array with X (neededNumber) cat names which i want to have in state to get them rendered.
-      */
+    {catsToDisplay: this.getRandomCatNames(cats, this.props.match.params.catCount)}
+    
   )
 
+  
 }
 
 
