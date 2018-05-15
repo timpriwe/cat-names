@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
-
-
 import sampleCats from './sample-cats';
 import Cat from './Cat';
 
@@ -33,6 +30,8 @@ return result;
 componentDidMount(){
 
   this.setState(
+
+    // this.getRandomCatNames(cats, this.props.match.params.catCount)
 
       /*Here I want to take my state, make it to an array(?) and use my getRandomCatNames on it with 
       the array as source and this.props.match.params.catCount (which comes from routing) as neededNumber.
