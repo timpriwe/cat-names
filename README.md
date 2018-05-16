@@ -28,3 +28,5 @@ Your app is ready to be deployed!
 To use the app go to: http://localhost:3000
 
 You can specify the number of displayed cat names if you go to http://localhost:3000/count/5 while 5 is the number of displayed cat names.
+
+At the moment it is possible to choose between 1-20 cat names.
