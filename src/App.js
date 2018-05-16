@@ -36,7 +36,7 @@ class App extends Component {
   renderRandomCats() {
     return (
      this.state.catsToDisplay.map(name => <div key={name}>{name}</div>)
-    );
+    )
   }
 
   renderCats() {
